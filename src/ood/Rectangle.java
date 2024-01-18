@@ -33,7 +33,8 @@ public class Rectangle extends Shape { // a child class of the Shape class
 	public Double getWidth() { return width; }
 	
 	public void setWidth(Double width) {
-		if(!isDimensionSafe(width) )  throw new IllegalArgumentException("Impermissible side-length.");
+		if(!isDimensionSafe(width) )
+			throw new IllegalArgumentException("Impermissible side-length.");
 		this.width = width;
 	}
 	
