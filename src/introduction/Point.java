@@ -15,6 +15,11 @@ public class Point {
         pointsCreated++;
     }
 
+    public Point(Point p){ // a copy constructor (this object is made an identical copy of another Point object)
+        this.x = p.x;
+        this.y = p.y;
+    }
+
     public Double getX() {
 		return x;
     }
