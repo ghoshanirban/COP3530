@@ -6,6 +6,7 @@ public class COP3530ArrayList<E> {
 
     public COP3530ArrayList(){ }
 
+    // adds a new element at the back; returns true if reallocation is required else returns false
     public boolean add(E e) {
         if( elementCount == 0 ) {
             A =  new Object[10]; // initial array size is set to 10 (other values can be used as well)
@@ -66,4 +67,6 @@ public class COP3530ArrayList<E> {
             str.append(A[i].toString()).append(" ");
         return str.toString();
     }
+
+    // Food for thought: can you make this class iterable so that one can use a for-each loop?
 }

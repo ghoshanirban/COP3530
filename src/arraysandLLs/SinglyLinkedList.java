@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class SinglyLinkedList<E> implements Iterable<E> {
 	//****************************************************//
-	private static class Node<E> {
+	private static class Node<E> { // Nested node class
 		final private E element; // stores data
 		private Node<E> next; // points to the next node in the list
 
