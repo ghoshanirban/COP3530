@@ -26,7 +26,7 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 	//****************************************************//
 
 	private Node<E> head = null, tail = null;
-	private int size = 0;
+	private int size = 0; // stores the number of nodes currently stored
 
 	// an empty constructor
 	public SinglyLinkedList() { }
@@ -95,7 +95,6 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 		return answer;
 	}
 
-
 	// adds a new node after the node that contains 'predecessor' as the element
 	public boolean addAfter(E predecessor, E incomingItem) {
 		Node<E> current = head, newNode = new Node<>(incomingItem, null);
@@ -154,7 +153,8 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 			return current != null;
 		}
 
-		// returns the data/element stored in the current node and then set current to the next node
+		// returns the data/element stored in the current node and
+		// then sets current to the next node
 		public E next() {
 			//System.out.println("Using next()");
 			E data  = current.getElement();

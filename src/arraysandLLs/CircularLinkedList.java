@@ -40,24 +40,24 @@ public class CircularLinkedList<E> implements Iterable<E> {
         return elementsStoredSoFar == 0;
     }
 
-    public E first() {
+    public E first() { // returns the item stored inside the node right after the tail node (the virtual head)
         if (isEmpty())
             return null;
         return tail.getNext().getElement();
     }
 
-    public E last() {
+    public E last() { // returns the item stored inside the tail node
         if (isEmpty())
             return null;
         return tail.getElement();
     }
 
-    public void rotate() {
+    public void rotate() { // rotates the list (moves tail to the next node)
         if (tail != null)
             tail = tail.getNext();
     }
 
-    public void addFirst(E e) {
+    public void addFirst(E e) { // adds a node after the tail node
         Node<E> newest = new Node<>(e, null);
 
         if (isEmpty()) {
@@ -71,12 +71,12 @@ public class CircularLinkedList<E> implements Iterable<E> {
         elementsStoredSoFar++;
     }
 
-    public void addLast(E e) {
+    public void addLast(E e) {  // adds a node after the tail node but the tail is set to the new node
         addFirst(e);
         tail = tail.getNext();
     }
 
-    public E removeFirst() {
+    public E removeFirst() { // removes the node right after the tail node
         if (isEmpty())
             return null;
 

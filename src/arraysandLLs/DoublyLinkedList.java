@@ -64,7 +64,8 @@ public class DoublyLinkedList<E> implements Iterable<E>{
 		size++;
 	}
 
-	// Since this is a private method, we cannot actually invoke this method on an object from a tester class
+	// Since this is a private method, we cannot
+	// actually invoke this method on an object from a tester class
 	private E remove(Node<E> node) {
 		if( node == null )
 			return null;
