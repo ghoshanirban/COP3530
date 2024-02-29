@@ -4,7 +4,6 @@ import arraysandLLs.SinglyLinkedList;
 import java.util.Iterator;
 
 public class LinkedStack<E> implements StackADT<E>, Iterable<E> {
-
 	final private SinglyLinkedList<E> L = new SinglyLinkedList<>();
 
 	public int size() { return L.size(); }
