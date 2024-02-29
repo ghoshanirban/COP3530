@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SierpinskiTriangle extends JFrame {
-	
     public static int OFFSET = 50; // pixel offset from edge
     final private int depth; // recursion depth
     
@@ -60,6 +59,6 @@ public class SierpinskiTriangle extends JFrame {
     }
 
     public static void main(String[] args) {
-    	new SierpinskiTriangle(5);
+    	new SierpinskiTriangle(6);
     }
 }
