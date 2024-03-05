@@ -37,6 +37,5 @@ public class MergeSort {
 		// send the remaining elements in the rightSequence to the outputSequence
 		while( j < rightSequence.length )
 			outputSequence[k++] = rightSequence[j++];
-
 	}
 }
