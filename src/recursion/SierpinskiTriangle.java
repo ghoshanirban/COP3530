@@ -6,6 +6,8 @@ import java.awt.*;
 public class SierpinskiTriangle extends JFrame {
     public static int OFFSET = 50; // pixel offset from edge
     final private int depth; // recursion depth
+
+    private static int countTriangles = 0;
     
     public SierpinskiTriangle(int depth) {
         super("Sierpinski triangle");
@@ -36,16 +38,16 @@ public class SierpinskiTriangle extends JFrame {
         p1-p2 is the base-line, p3 the top point*/
     private static void drawTriangles(Graphics g, int d, Point p1, Point p2, Point p3) {
         if (d == 0) {  // depth is 0, draw the triangle
-
             // set a random color
-            g.setColor(new Color((int)(Math.random() * 0x1000000)));
+           // g.setColor(new Color((int)(Math.random() * 0x1000000)));
 
             Polygon P = new Polygon();
             P.addPoint(p1.x,p1.y);
             P.addPoint(p2.x,p2.y);
             P.addPoint(p3.x,p3.y);
 
-            g.fillPolygon(P);
+         //   g.fillPolygon(P);
+            countTriangles++;
             return;
         }
         // Draw three Sierpinski triangles of depth d-1
@@ -59,6 +61,7 @@ public class SierpinskiTriangle extends JFrame {
     }
 
     public static void main(String[] args) {
-    	new SierpinskiTriangle(3);
+    	new SierpinskiTriangle(5);
+        System.out.println("Triangles drawn: " + countTriangles);
     }
 }
