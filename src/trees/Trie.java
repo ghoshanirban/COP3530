@@ -90,7 +90,7 @@ public class Trie implements Iterable<String> { // This code works only on Engli
         for(int i = 0; i < s.length() ; i++) { // climb down the tree
             int childID = s.charAt(i) - 'a'; // get the id of the child
             if( current.children[childID] == null )
-                current.children[childID] = new TrieNode();
+                return;
             current = current.children[childID];
         }
         if( current.word != null ) { // delete the word is present
