@@ -22,6 +22,7 @@ public class Trie implements Iterable<String> { // This code works only on Engli
         Scanner input = new Scanner(new File(str));
         while( input.hasNextLine() )
             insertNewWord( input.nextLine() );
+        input.close();
     }
 
     // puts all the words currently stored in the trie inside an ArrayList
