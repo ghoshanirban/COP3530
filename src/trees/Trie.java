@@ -39,6 +39,7 @@ public class Trie implements Iterable<String> { // This code works only on Engli
 
     // Using a string, it traces out a path in the trie and
     // returns a reference to the last visited node in the traced path
+    // if 's' is absent in the trie, insert it by creating additional nodes
     private TrieNode traverseUsingString(String s) {
         s = s.toLowerCase();
         TrieNode current = root;

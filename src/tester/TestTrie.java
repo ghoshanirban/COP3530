@@ -7,9 +7,6 @@ import trees.Trie;
 public class TestTrie {
     public static void main(String[] args) throws FileNotFoundException {
 
-//        int c = 'b';
-//        System.out.println(c);
-
         Trie dictionary = new Trie();
 
         // source: https://github.com/dwyl/english-words, contains 370,104 words
