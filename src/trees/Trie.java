@@ -114,8 +114,8 @@ public class Trie implements Iterable<String> { // This code works only on Engli
     }
 
     // finds the words which have the same prefix s
-    public void wordsHavingPrefix(String s, ArrayList<String> words){
-        TrieNode lastNode = traverseUsingString(s);
+    public void wordsHavingPrefix(String prefix, ArrayList<String> words){
+        TrieNode lastNode = traverseUsingString(prefix);
         getAllWordsRec(lastNode,words); // grab all the words in the subtree rooted at 'lastNode'
     }
 
