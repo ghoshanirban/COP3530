@@ -164,7 +164,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
                 }
                 // Case 3 (has both left and right children):
                 // left child of 'current' does not have a right child; use Case 2 to delete
-                if (current.left.right == null) {
+                if (current.left.right == null) { // move the content of its current's left child to current
                     current.key = current.left.key;
                     current.val = current.left.val;
                     current.left = current.left.left;
@@ -173,6 +173,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
                 // left child of 'current' has a right child; delete using its inorder predecessor
                 else {
                     Node<K, V> inorderPredecessor = findAndDeleteLargestChild(current.left); // also deletes!
+                    // then, move the record inside the inorderPredecessor to Current
                     current.key = inorderPredecessor.key;
                     current.val = inorderPredecessor.val;
                 }
