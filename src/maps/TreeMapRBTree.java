@@ -237,7 +237,7 @@ public class TreeMapRBTree<K extends Comparable<K>, V> implements Iterable< Simp
     //**********************************************************//
     // find height of the binary search tree
     public int height( ){ return heightRec(root); }
-    public boolean isLeaf(Node<K,V> n) { return n.left == null && n.right == null; }
+    private boolean isLeaf(Node<K,V> n) { return n.left == null && n.right == null; }
     private int heightRec(Node<K,V> n){
         if( n == null || isLeaf(n) )  return 0;
         else             return 1 + Math.max( heightRec(n.left) , heightRec(n.right) );
