@@ -49,7 +49,7 @@ public class IPAddressesVerifier {
             System.out.printf("   Linearithmic: %7d\n", (System.currentTimeMillis() - start));
 
             if( resultOfBruteForce != resultOfLinearithmic )
-                throw new RuntimeException("Issues detected with the implementations.");
+                throw new RuntimeException("Issue(s) detected with the implementations.");
         }
     }
 }
