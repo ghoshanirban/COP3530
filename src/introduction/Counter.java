@@ -14,4 +14,9 @@ public class Counter {
     public void increment() { count++; }                     	  // an update method
     public void incrementBy(int delta) { count += delta; }        // an update method
     public void changeValueTo(int newValue) { count = newValue; } // an update method
+
+    public String toString() {
+        System.out.println("The toString() from Counter class is invoked");
+        return Integer.toString(count);
+    }
 }

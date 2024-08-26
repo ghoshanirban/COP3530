@@ -1,7 +1,4 @@
-
 package introduction;
-
-import java.util.Arrays;
 
 public class Point {
 

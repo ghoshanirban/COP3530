@@ -6,6 +6,8 @@ public class TestCounter {
         Counter c1;         // declares a reference variable
         c1 = new Counter(); // now c1 points to a Counter object
 
+        System.out.println(c1);
+
         System.out.println("Value after creating c1: " + c1.getValue());
 
         c1.increment();
