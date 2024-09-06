@@ -4,7 +4,7 @@ public class Rectangle extends Shape { // a child class of the Shape class
 	private Double height, width; // not accessible to any other class
 	
 	public Rectangle() {
-		super("dark green",true);
+		super("dark green",true); // super constructor use is optional
 		System.out.println("No arg contructor in Rectangle is being executed.");
 		height = 1.0;
 		width = 2.0;
