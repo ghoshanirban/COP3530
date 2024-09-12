@@ -59,7 +59,7 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 
 	// adds a new node at the beginning of the list
 	public void addFirst(E e) {
-		head = new Node<>(e, head);
+		head = new Node<>(e, head); // creating a new node and updating the head to the new node
 
 		if ( isEmpty() )
 			tail = head;
