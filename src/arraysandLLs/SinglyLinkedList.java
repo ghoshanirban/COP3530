@@ -99,17 +99,17 @@ public class SinglyLinkedList<E> implements Iterable<E> {
 	public boolean addAfter(E predecessor, E incomingItem) {
 		Node<E> current = head, newNode = new Node<>(incomingItem, null);
 
-		// go to the node whose element == c
+		// go to the node whose element == predecessor
 		while( current != null && !current.getElement().equals(predecessor) )
 			current = current.getNext();
 
-		if( current == null ) // c is not present in the list
+		if( current == null ) // 'predecessor' is not present in the list
 			return false; // unsuccessful insertion
-		else if ( current == tail ){ // c is present in the tail
+		else if ( current == tail ){ // 'predecessor' is present in the tail
 			tail.setNext(newNode);
 			tail = newNode;
 		}
-		else { // c is present elsewhere (not in the tail)
+		else { // 'predecessor' is present elsewhere (not in the tail)
 			newNode.setNext(current.getNext());
 			current.setNext(newNode);
 		}

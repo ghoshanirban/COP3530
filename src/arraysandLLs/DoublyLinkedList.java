@@ -48,10 +48,10 @@ public class DoublyLinkedList<E> implements Iterable<E>{
 
 		Node<E> newNode = new Node<>(e, predecessor, successor);
 
-		if( predecessor != null )
+		if( predecessor != null ) // if predecessor exists
 			predecessor.setNext(newNode);
 
-		if( successor != null )
+		if( successor != null ) // if successor exists
 			successor.setPrev(newNode);
 
 		if( successor == head )
@@ -63,7 +63,7 @@ public class DoublyLinkedList<E> implements Iterable<E>{
 		size++;
 	}
 
-	// Since this is a private method, we cannot
+	// Since this is a private method. So, we cannot
 	// actually invoke this method on an object from a tester class
 	private E remove(Node<E> node) {
 		if( node == null )
