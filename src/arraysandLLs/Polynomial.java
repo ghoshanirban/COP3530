@@ -50,7 +50,7 @@ public class Polynomial implements Cloneable, Iterable<Polynomial.PolynomialTerm
         return clonePolynomial;
     }
 
-    private boolean isZeroPolynomial() { // checks if 'p' is a zero polynomial
+    private boolean isZeroPolynomial() { // checks if 'p' is a zero polynomial (p(x)=0)
         return L.size() == 1 && L.first().coefficient == 0 && L.first().exponent == 1;
     }
 
