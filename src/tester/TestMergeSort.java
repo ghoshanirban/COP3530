@@ -6,13 +6,13 @@ import java.util.Random;
 public class TestMergeSort {
 
 	public static void main(String[] args) {
-		Integer[] A = {50, 40, 30, 20, 10};
-		MergeSort.sort(A);
-		for(Integer x : A)
-			System.out.print(x + " ");
-
-		System.out.println();
-		
+//		Integer[] A = {50, 40, 30, 20, 10};
+//		MergeSort.sort(A);
+//		for(Integer x : A)
+//			System.out.print(x + " ");
+//
+//		System.out.println();
+//
 		Random r = new Random();
 		ComparablePoint[] P = new ComparablePoint[10];
 
@@ -30,14 +30,14 @@ public class TestMergeSort {
 			System.out.print(x + " ");
 
 		//String[] S = {"Jax","Atl","Artic","Beijing","London"};
-		String[] S = {"Alexandria","Alex","Alexandrib"};
-		for(String s : S)
-			System.out.print(s + " ");
-		System.out.println();
-
-		MergeSort.sort(S);
-		for(String s : S)
-			System.out.print(s + " ");
+//		String[] S = {"Alexandria","Alex","Alexandrib"};
+//		for(String s : S)
+//			System.out.print(s + " ");
+//		System.out.println();
+//
+//		MergeSort.sort(S);
+//		for(String s : S)
+//			System.out.print(s + " ");
 
 	}
 
