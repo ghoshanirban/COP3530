@@ -24,8 +24,6 @@ public class BinaryTree<E> implements Iterable<E>{
 	
 	public BinaryTree() { }
 	public boolean isEmpty() { return root == null; }
-
-
 	//========================================================
 	public void printInOrder() {
 		inOrder(root);
