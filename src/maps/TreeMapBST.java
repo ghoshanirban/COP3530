@@ -38,7 +38,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
 
         Node<K,V> current = root;
         while( current != null) {
-            if (key.compareTo(current.key) == 0) // a record exists with key 'key; insertion failed
+            if (key.compareTo(current.key) == 0) // a record exists with key 'key'; insertion failed
                 return current.val;
             else if (key.compareTo(current.key) < 0)  // go to the left subtree
                 current = current.left;
@@ -56,7 +56,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
 
         Node<K,V> current = root;
         while( current != null) {
-            if (key.compareTo(current.key) == 0) {// a record exists with key 'key; insertion failed
+            if (key.compareTo(current.key) == 0) {// a record exists with key 'key'; insertion failed
                 V oldValue = current.val;
                 current.val = newValue;
                 return oldValue;
@@ -86,7 +86,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
         boolean isLeftChild;
 
         do {
-            if (key.compareTo(current.key) == 0) // a record exists with key 'key; insertion failed
+            if (key.compareTo(current.key) == 0) // a record exists with key 'key'; insertion failed
                 return false;
             else if (key.compareTo(current.key) < 0) { // go to the left subtree and continue
                 parentOfCurrent = current;
