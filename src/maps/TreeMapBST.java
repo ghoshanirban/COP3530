@@ -112,7 +112,7 @@ public class TreeMapBST<K extends Comparable<K>, V> implements MapADT<K,V>, Iter
     private Node<K, V> findAndDeleteLargestChild(Node<K, V> n) {
         Node<K,V> current = n;
 
-        while( current.right.right != null )
+        while( current.right.right != null ) // keep on moving right as long as we can
             current = current.right;
 
         Node<K, V> hold = current.right;
