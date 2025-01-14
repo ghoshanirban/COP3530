@@ -13,7 +13,7 @@ public class Rectangle extends Shape { // a child class of the Shape class
 	public Rectangle(Double height, Double width, String color, boolean filledOrNot) {
 		super(color,filledOrNot);
 
-		System.out.println("Rectangle(Double height, Double width, String color, boolean filled) contructor in Circle is being executed.");
+		System.out.println("Rectangle(Double height, Double width, String color, boolean filled) contructor in Rectangle is being executed.");
 		if(!isDimensionSafe(height) || !isDimensionSafe(width) ) 
 			throw new IllegalArgumentException("Impermissible side-length.");
 				
@@ -22,7 +22,7 @@ public class Rectangle extends Shape { // a child class of the Shape class
 	}
 	
 	public Rectangle(Double height, Double width) {
-		System.out.println("Rectangle(Double height, Double width) contructor in Circle is being executed.");
+		System.out.println("Rectangle(Double height, Double width) contructor in Rectangle is being executed.");
 		if(!isDimensionSafe(height) || !isDimensionSafe(width) ) 
 			throw new IllegalArgumentException("Impermissible side-length.");
 			

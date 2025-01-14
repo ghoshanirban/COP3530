@@ -18,6 +18,7 @@ public class Point {
     public Point(Point p){ // a copy constructor (this object is made an identical copy of another Point object)
         this.x = p.x;
         this.y = p.y;
+        pointsCreated++;
     }
 
     public Double getX() {
@@ -48,7 +49,7 @@ public class Point {
             return false;
     }
 
-    public String toString() {
-        return "(" + x + ", " + y + ")";
-    }
+//    public String toString() {
+//        return "(" + x + ", " + y + ")";
+//    }
 }
