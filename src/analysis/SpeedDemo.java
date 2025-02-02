@@ -56,13 +56,13 @@ public class SpeedDemo {
 	public static void main(String[] args) {
 		  
 	    long startA = System.currentTimeMillis();
-	    generateLongStringA(1000000);
+	    generateLongStringA(200000);
 	    long timeTakenA = System.currentTimeMillis() - startA;
 
 	    System.out.println("Time taken by A: " + timeTakenA + " ms" );
 
 	    long startB = System.currentTimeMillis();
-	    generateLongStringB(1000000);
+	    generateLongStringB(200000);
 	    long timeTakenB = System.currentTimeMillis() - startB;
 
 	    System.out.println("Time taken by B: " + timeTakenB + " ms" );
