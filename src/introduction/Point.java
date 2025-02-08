@@ -49,7 +49,7 @@ public class Point {
             return false;
     }
 
-//    public String toString() {
-//        return "(" + x + ", " + y + ")";
-//    }
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
 }

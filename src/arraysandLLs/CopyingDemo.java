@@ -88,24 +88,24 @@ public class CopyingDemo {
 //        ///////////////////////////////////////////////////////////////////////////////
 //        System.out.println("========================================");
 //        ///////////////////////////////////////////////////////////////////////////////
-//        System.out.println("Situation 6");
-//        Point[] sourcePointArrayC = {new Point(1.1,2.1), new Point(3.1, 4.1), new Point(5.1,6.1)};
-//
-//        // doing deep-copy
-//        Point[] destinationPointArrayC = new Point[sourcePointArrayC.length]; // objects are not created as of now!
-//        for(int index = 0; index < destinationPointArrayC.length; index++ ) // now we create objects and initialize them
-//            destinationPointArrayC[index] = new Point(sourcePointArrayC[index]);
-//                    //new Point(sourcePointArrayC[index].getX(),sourcePointArrayC[index].getY());
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayC ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayC ) );
-//
-//        sourcePointArrayC[0].setX(101.11);
-//        sourcePointArrayC[1].setY(211.771);
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayC ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayC ) );
-//
+        System.out.println("Situation 6");
+        Point[] sourcePointArrayC = {new Point(1.1,2.1), new Point(3.1, 4.1), new Point(5.1,6.1)};
+
+        // doing deep-copy
+        Point[] destinationPointArrayC = new Point[sourcePointArrayC.length]; // objects are not created as of now!
+        for(int index = 0; index < destinationPointArrayC.length; index++ ) // now we create objects and initialize them
+            destinationPointArrayC[index] = new Point(sourcePointArrayC[index]);
+                    //new Point(sourcePointArrayC[index].getX(),sourcePointArrayC[index].getY());
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayC ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayC ) );
+
+        sourcePointArrayC[0].setX(101.11);
+        sourcePointArrayC[1].setY(211.771);
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayC ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayC ) );
+
 //        int n = 10;
 //        Point[] anArrayOfPoints = new Point[n];
 //        //double x = anArrayOfPoints[5].getX(); <---- throws NullPointerException

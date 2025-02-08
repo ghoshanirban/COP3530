@@ -19,7 +19,7 @@ public class TestDoublyLinkedList {
 		myFirstDLL.addLast('P');
 		myFirstDLL.addLast('C');
 
-		for( Character c : myFirstDLL )
+		for( var c : myFirstDLL )
 			System.out.print(c + " ");
 
 //		Iterator it = myFirstDLL.iterator();
