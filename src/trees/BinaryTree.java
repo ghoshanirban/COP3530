@@ -73,6 +73,7 @@ public class BinaryTree<E> implements Iterable<E>{
 			return;
 		}
 
+		// check if the path string is made up of 0s and 1s only
 		for( int pos = 0; pos < path.length(); pos++)
 			if( path.charAt(pos) != '0' && path.charAt(pos) != '1')
 				throw new IllegalArgumentException("Invalid path string!");
