@@ -65,6 +65,7 @@ public class Polynomial implements Cloneable, Iterable<Polynomial.PolynomialTerm
         Iterator<PolynomialTerm> itForPolynomialP = p.L.iterator(), itForPolynomialQ = q.L.iterator();
         PolynomialTerm nextTermFromP = itForPolynomialP.next(), nextTermFromQ = itForPolynomialQ.next();
 
+
         while( nextTermFromP != null && nextTermFromQ != null ){ // while there are un-scanned polynomial terms in both the polynomials
            if( nextTermFromP.exponent == nextTermFromQ.exponent ) { // the exponents match, so add up the coefficients
                var nextTermForResult = new PolynomialTerm( nextTermFromP.coefficient + nextTermFromQ.coefficient, nextTermFromP.exponent);

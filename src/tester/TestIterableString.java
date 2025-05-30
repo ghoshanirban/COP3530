@@ -24,11 +24,11 @@ public class TestIterableString {
 //            System.out.print(c + " ");
 
        //  Same approach using the keyword 'var'
-//        var z = new IterableString("Data Structures");
-//        System.out.println(z);
-//        System.out.println("Size: " + z.length() );
-//        for( var c : z )
-//            System.out.print(c);
+        var z = new IterableString("Data Structures");
+        //System.out.println(z);
+        //System.out.println("Size: " + z.length() );
+        for( var c : z )
+            System.out.print(c);
 
 //        Iterator<Character> it = z.iterator();
 //        while(it.hasNext())
