@@ -10,7 +10,7 @@ public class SierpinskiTriangle extends JFrame {
     public SierpinskiTriangle(int depth) {
         super("Sierpinski triangle");
     	this.depth = depth;
-        setSize(1000, 1000);
+        setSize(2000, 2000);
         setVisible(true);
     }
     
@@ -59,6 +59,6 @@ public class SierpinskiTriangle extends JFrame {
     }
 
     public static void main(String[] args) {
-    	new SierpinskiTriangle(3);
+    	new SierpinskiTriangle(10);
     }
 }

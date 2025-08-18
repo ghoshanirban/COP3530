@@ -12,7 +12,7 @@ public class Factorial {
 	}
 	
 	public static void main(String[] args) {
-		long result = factorial(5);
+		long result = factorial(100);
 		System.out.println( result );
 	}
 }
