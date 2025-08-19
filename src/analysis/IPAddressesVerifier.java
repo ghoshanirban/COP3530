@@ -26,7 +26,7 @@ public class IPAddressesVerifier {
         return true;
     }
 
-    // Runs in O(n log n) time
+    // Runs in O(n log n) time (linearithmic)
     public static boolean linearithmic(String[] addresses) {
         Arrays.sort(addresses); // Takes O(n log n) time; uses the compareTo() method from the String class
         for( int i = 0; i < addresses.length - 1; i++) // this for loop runs in O(n) time
