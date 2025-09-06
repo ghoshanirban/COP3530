@@ -38,7 +38,7 @@ public class PrefixAverage {
 //		System.out.println( Arrays.toString( findPrefixAveragesB(x)) );
 
 		Random generator = new Random();
-		int n = 100000;
+		int n = 1000000;
 		double[] testArray = new double[n];
 		for( int i = 0; i < n; i++)
 			testArray[i] = generator.nextInt(n);

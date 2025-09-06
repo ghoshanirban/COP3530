@@ -22,7 +22,7 @@ public class Point {
     }
 
     public Double getX() {
-		return x;
+        return x;
     }
 
     public Double getY() {

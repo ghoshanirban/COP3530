@@ -9,7 +9,7 @@ public class TestShapes {
 ////
 //		System.out.println(someRandomShape instanceof Shape);
 
-		Rectangle S = new Square();
+		Square S = new Square();
 		//System.out.println(S);
 		//System.out.println(S instanceof Shape);
 
