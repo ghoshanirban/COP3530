@@ -35,6 +35,9 @@ public class ToySinglyLinkedList {
         Node nodeC = new Node('C', null);
         nodeP.setNext(nodeC);
 
+//        Node head = nodeX;
+//        Node tail = nodeC;
+
 //        Node nodeT = new Node('T', null); // the tail
 //        nodeC.setNext(nodeT);
 

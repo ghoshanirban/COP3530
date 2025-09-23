@@ -54,37 +54,37 @@ public class CopyingDemo {
 //        ///////////////////////////////////////////////////////////////////////////////
 //        System.out.println("========================================");
 //        ///////////////////////////////////////////////////////////////////////////////
-//        System.out.println("Situation 4");
-//        Point[] sourcePointArrayA = {new Point(1.0,2.0), new Point(3.0, 4.0), new Point(5.0, 6.0)};
-//        Point[] destinationPointArrayA = sourcePointArrayA; // shallow-copy
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayA ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayA ) );
-//
-//        sourcePointArrayA[0].setX(99.123);
-//        sourcePointArrayA[1].setY(-45.6899);
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayA ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayA ) );
+        System.out.println("Situation 4");
+        Point[] sourcePointArrayA = {new Point(1.0,2.0), new Point(3.0, 4.0), new Point(5.0, 6.0)};
+        Point[] destinationPointArrayA = sourcePointArrayA; // shallow-copy
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayA ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayA ) );
+
+        sourcePointArrayA[0].setX(99.123);
+        sourcePointArrayA[1].setY(-45.6899);
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayA ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayA ) );
 //        ///////////////////////////////////////////////////////////////////////////////
 //        System.out.println("========================================");
 //        ///////////////////////////////////////////////////////////////////////////////
 //        System.out.println("Situation 5");
-//        Point[] sourcePointArrayB = {new Point(11.0,21.0), new Point(31.0, 41.0), new Point(51.0, 61.0)};
-//        Point[] destinationPointArrayB = sourcePointArrayB.clone(); // shallow-copy for non-primitives
-//
-//        // The following approach is doing shallow-copy too!
-//        //Point[] destinationPointArrayB = new Point[sourcePointArrayB.length];
-//        //System.arraycopy(sourcePointArrayB,0, destinationPointArrayB,0,3);
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayB ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayB ) );
-//
-//        sourcePointArrayB[0].setX(101.11);
-//        sourcePointArrayB[1].setY(211.771);
-//
-//        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayB ) );
-//        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayB ) );
+        Point[] sourcePointArrayB = {new Point(11.0,21.0), new Point(31.0, 41.0), new Point(51.0, 61.0)};
+        Point[] destinationPointArrayB = sourcePointArrayB.clone(); // shallow-copy for non-primitives
+
+        // The following approach is doing shallow-copy too!
+        //Point[] destinationPointArrayB = new Point[sourcePointArrayB.length];
+        //System.arraycopy(sourcePointArrayB,0, destinationPointArrayB,0,3);
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayB ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayB ) );
+
+        sourcePointArrayB[0].setX(101.11);
+        sourcePointArrayB[1].setY(211.771);
+
+        System.out.println( "Source point array: " + Arrays.toString( sourcePointArrayB ) );
+        System.out.println( "Destination point array: " + Arrays.toString( destinationPointArrayB ) );
 //        ///////////////////////////////////////////////////////////////////////////////
 //        System.out.println("========================================");
 //        ///////////////////////////////////////////////////////////////////////////////

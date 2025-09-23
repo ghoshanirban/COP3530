@@ -10,6 +10,7 @@ public class Polynomial implements Cloneable, Iterable<Polynomial.PolynomialTerm
      *  and getter/setter methods, and even the toString method. Those come with record classes for free!
      */
     public record PolynomialTerm(int coefficient, int exponent) { }
+
     SinglyLinkedList<PolynomialTerm> L = new SinglyLinkedList<>(); // A singly linked list to represent the polynomial
 
     private Polynomial() { } // creates and empty polynomial; used internally (is declared private)
