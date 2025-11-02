@@ -30,6 +30,5 @@ public class TestTrie {
         System.out.println( "Number of words in the trie: " + dictionary.numberOfWords() );
 
         System.out.println( dictionary.isPresent("abdomen"));
-
     }
 }

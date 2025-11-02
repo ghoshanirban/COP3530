@@ -59,6 +59,6 @@ public class SierpinskiTriangle extends JFrame {
     }
 
     public static void main(String[] args) {
-    	new SierpinskiTriangle(10);
+    	new SierpinskiTriangle(9);
     }
 }

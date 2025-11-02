@@ -99,7 +99,17 @@ public class Trie implements Iterable<String> { // This code works only on Engli
         }
 
         while ( current != root && isLeaf(current)  ){ // climb up and keep on deleting useless nodes
-            if( current.word != null )
+
+            // check if current has more than one child
+            int numberOfChildren = 0;
+            for( TrieNode child : current.children ) {
+                if (child != null)
+                    numberOfChildren++;
+                if (numberOfChildren > 1)
+                    break;
+            }
+
+            if( current.word != null || numberOfChildren > 1 )
                 break;
             TrieNode parentOfCurrent = current.parent;
             parentOfCurrent.children[ getChildID(parentOfCurrent,current) ] = null;
