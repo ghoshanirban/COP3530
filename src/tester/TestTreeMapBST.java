@@ -5,19 +5,19 @@ import java.util.*;
 
 public class TestTreeMapBST {
 	public static void main(String[] args) {
-//		TreeMapBST<Integer,String> myBST = new TreeMapBST<>();
-//
-//		myBST.put(55, "Eric");
-//		myBST.put(45, "Pat");
-//		myBST.put(35, "Caroline");
-//		myBST.put(50, "Tom");
-//		myBST.put(46, "Ann");
-//		myBST.put(52, "Jennifer");
-//		myBST.put(54, "Peter");
-//		myBST.put(56, "Melissa");
-//
-//		for(var record : myBST ) // we are actually doing an inorder traversal; so the records are retrieved in a sorted fashion based on keys
-//			System.out.println(record.getKey() + ", " + record.getValue());
+		TreeMapBST<Integer,String> myBST = new TreeMapBST<>();
+
+		myBST.put(55, "Eric");
+		myBST.put(45, "Pat");
+		myBST.put(35, "Caroline");
+		myBST.put(50, "Tom");
+		myBST.put(46, "Ann");
+		myBST.put(52, "Jennifer");
+		myBST.put(54, "Peter");
+		myBST.put(56, "Melissa");
+
+		for(var record : myBST ) // we are actually doing an inorder traversal; so the records are retrieved in a sorted fashion based on keys
+			System.out.println(record.getKey() + ", " + record.getValue());
 //
 //		System.out.print("Height. " + myBST.height() + "\n");
 //

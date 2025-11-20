@@ -59,14 +59,14 @@ public class Graph implements GraphADT { // the vertices are numbered from 0 to 
         return adjacencyMap.get(source).iterator();
     }
 
+    public int degree(int source){ // finds degree of a node
+        return adjacencyMap.get(source).size();
+    }
+
     public int degree(){ // finds degree of the graph
         int degree = 0;
         for(int i = 0; i < vertexCount; i++)
             degree = Math.max(degree(i), degree);
         return degree;
-    }
-
-    public int degree(int source){ // finds degree of a node
-        return adjacencyMap.get(source).size();
     }
 }
