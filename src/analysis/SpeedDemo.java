@@ -28,7 +28,7 @@ public class SpeedDemo {
 	}
 
 	public static void compare(){
-		int n = 100000000, k = 10000;
+		int n = 1000000, k = 5;
 		Random r = new Random();
 		int[] arr1 = new int[n], arr2 = new int[n];
 
@@ -54,15 +54,15 @@ public class SpeedDemo {
 	}
 	
 	public static void main(String[] args) {
-		  
+//
 //	    long startA = System.currentTimeMillis();
-//	    generateLongStringA(1000000);
+//	    generateLongStringA(200000);
 //	    long timeTakenA = System.currentTimeMillis() - startA;
 //
 //	    System.out.println("Time taken by A: " + timeTakenA + " ms" );
 //
 //	    long startB = System.currentTimeMillis();
-//	    generateLongStringB(1000000);
+//	    generateLongStringB(20000);
 //	    long timeTakenB = System.currentTimeMillis() - startB;
 //
 //	    System.out.println("Time taken by B: " + timeTakenB + " ms" );

@@ -10,8 +10,8 @@ public class TestShapes {
 //		System.out.println(someRandomShape instanceof Shape);
 
 		Square S = new Square();
-		//System.out.println(S);
-		//System.out.println(S instanceof Shape);
+		System.out.println(S);
+		System.out.println(S instanceof Shape);
 
 //		Square S = new Square(10.23);
 //		System.out.println(S);
