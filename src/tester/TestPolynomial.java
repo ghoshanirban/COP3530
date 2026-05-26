@@ -14,16 +14,16 @@ public class TestPolynomial {
         Polynomial result = Polynomial.add(p,q);
         System.out.println("result = " + result);
 
-        result.sendToFile("datasets/result.txt");
-
-        Polynomial zero = new Polynomial("datasets/polyZero.txt");
-        System.out.println("result + Zero = " + Polynomial.add(result,zero));
-
-        Polynomial r = new Polynomial("datasets/polyC.txt");
-        System.out.println("r(x) = " + r);
-        System.out.println("result + r = " + Polynomial.add(result,r));
-
-        for( var term : result )
-            System.out.println(term);
+//        result.sendToFile("datasets/result.txt");
+//
+//        Polynomial zero = new Polynomial("datasets/polyZero.txt");
+//        System.out.println("result + Zero = " + Polynomial.add(result,zero));
+//
+//        Polynomial r = new Polynomial("datasets/polyC.txt");
+//        System.out.println("r(x) = " + r);
+//        System.out.println("result + r = " + Polynomial.add(result,r));
+//
+//        for( var term : result )
+//            System.out.println(term);
     }
 }

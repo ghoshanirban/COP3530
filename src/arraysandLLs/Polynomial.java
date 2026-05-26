@@ -2,7 +2,7 @@ package arraysandLLs;
 
 import java.io.*;
 import java.util.*;
-//
+
 public class Polynomial implements Cloneable, Iterable<Polynomial.PolynomialTerm> { // The cloneable interface helps to create clones of an object
     /**
      *  A record class for representing the polynomial terms.
@@ -13,7 +13,8 @@ public class Polynomial implements Cloneable, Iterable<Polynomial.PolynomialTerm
 
     SinglyLinkedList<PolynomialTerm> L = new SinglyLinkedList<>(); // A singly linked list to represent the polynomial
 
-    private Polynomial() { } // creates and empty polynomial; used internally (is declared private)
+    private Polynomial() {
+    } // creates and empty polynomial; used internally (is declared private)
 
     /**
      * This method reads a polynomial from a text file and creates a polynomial linked list

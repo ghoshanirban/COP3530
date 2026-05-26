@@ -30,6 +30,7 @@ public class ArrayStack<E> implements StackADT<E>, Iterable<E>{
 		stackTop--;
 		return answer;
 	}
+
 	public E top() {
 		if( isEmpty() ) return null;
 		return A[stackTop];

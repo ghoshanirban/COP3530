@@ -18,12 +18,12 @@ public class TestSinglyLinkedList {
 
 		//System.out.println(charSLL); // the toString method from SinglyLinkedList is invoked
 
-		for( var c : charSLL )
-			System.out.println(c);
+//		for( var c : charSLL )
+//			System.out.println(c);
 
 		//charSLL.addAfter('K', 'T');
 
-//		System.out.println(charSLL);
+	//	System.out.println(charSLL);
 //
 //		for( var item : charSLL ) // SinglyLinkedList is iterable; so for-each loop works!
 //			System.out.print(item + " ");
@@ -34,14 +34,14 @@ public class TestSinglyLinkedList {
 		pointLL.addFirst(new Point(99.18,-2.464));
 		pointLL.addLast(new Point(100.11, 0.0));
 //
-//		System.out.println(pointLL); // the toString method from SinglyLinkedList is invoked
+		System.out.println(pointLL); // the toString method from SinglyLinkedList is invoked
 //
 //		pointLL.removeFirst();
 //
 //		System.out.println(pointLL);
 //
-		for( var item : pointLL ) // SinglyLinkedList is iterable; so for-each loop works!
-			System.out.print(item + " ");
+//		for( var item : pointLL ) // SinglyLinkedList is iterable; so for-each loop works!
+//			System.out.print(item + " ");
 		// ============================================================= //
 	}
 
